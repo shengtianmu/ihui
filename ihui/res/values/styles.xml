@@ -1,0 +1,126 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="tab_item">
+        <item name="android:gravity">center_horizontal</item>  
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>         
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/home_btn_bg</item>
+        
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>       
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+	
+	<style name="TextAppearance.SlidingTabNormal" 
+        parent="@android:attr/textAppearanceMedium">
+        <item name="android:textColor">?android:attr/textColorTertiary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:shadowColor">@color/sliding_tab_text_color_active</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">5.0</item>
+    </style>
+    <style name="TextAppearance.SlidingTabActive" 
+        parent="@android:attr/textAppearanceMedium">
+        <item name="android:textColor">@color/sliding_tab_text_color_active</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="util_imagepicker_btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+     <style name="Dialog_Fullscreen"> 
+      <item name="android:windowFullscreen">true</item> 
+      <item name="android:windowNoTitle">true</item>  
+    </style> 
+    <style name="Dialog_Top" parent="android:Theme.Dialog" >
+        <item name="android:windowAnimationStyle">@style/AnimTop2</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->        
+     </style>
+     <style name="AnimTop2" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_top_in2</item>
+        <item name="android:windowExitAnimation">@anim/push_top_out2</item>
+	</style>
+	
+     <!-- com.hzjstudio -->
+     <style name="main_tab_bottom1">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/com_hzjstudio__ihui_home_btn_bg1</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    
+     <!--对话窗口  -->
+     <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+     
+      <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+ <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+ <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+ <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+ <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+ <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+ <!-- 模糊 -->
+    </style>
+    
+</resources>

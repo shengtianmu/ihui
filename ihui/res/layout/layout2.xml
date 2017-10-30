@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<!-- <com.zpstudio.ui.adv.view.DirectionalViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> -->
+    <!-- <com.zpstudio.ui.adv.view.MyViewFlipper 
+        android:id="@+id/vf_tu"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"/> -->
+        
+     <ImageView
+	    android:id="@+id/iv_bg"
+	    android:visibility="invisible"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/iv_butto" />   
+        
+    <com.zpstudio.ui.adv.view.VerticalViewPager
+        android:id="@+id/verticalviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+	<!-- <com.zpstudio.ui.adv.view.VerticalLinearLayout 
+	    android:id="@+id/id_main_ly"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/duobao02" >
+	
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="hello" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/biz_ad_new_version1_img1" >
+	
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="hello" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/biz_ad_new_version1_img2" >
+	
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="hello" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/biz_ad_new_version1_img3" >
+	
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="hello" />
+	    </LinearLayout>
+	
+	</com.zpstudio.ui.adv.view.VerticalLinearLayout> -->
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+		<com.zpstudio.ui.adv.view.DSLView
+		    android:id="@+id/dSLView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="100dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginLeft="22dp"
+		    android:layout_marginRight="22dp"
+		    android:layout_marginBottom="20dp" />
+
+		<!-- <ViewFlipper
+		    android:id="@+id/flipper"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/a1"/> -->
+
+		<ImageView
+		    android:visibility="gone"
+		    android:id="@+id/iv_leff"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:scaleType="center"
+		    android:src="@drawable/iv_right" />
+
+		<ImageView
+		    android:visibility="gone"
+		    android:id="@+id/iv_right"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:scaleType="center"
+		    android:src="@drawable/iv_leff" />
+
+		<ImageView
+		    android:id="@+id/iv_top"
+		    android:layout_marginTop="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:scaleType="center"
+		    android:src="@drawable/iv_top" />
+
+		<ImageView
+		    android:id="@+id/iv_butto"
+		    android:layout_marginBottom="9dp"
+		    android:visibility="invisible"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentBottom="true"
+		    android:scaleType="center"
+		    android:src="@drawable/iv_butto" />
+
+		<TextView
+		    android:id="@+id/tv_mone"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/iv_butto"
+		    android:layout_alignLeft="@+id/dSLView1"
+		    android:textSize="15sp"
+		    android:layout_marginLeft="7dp"
+		    android:layout_marginBottom="8dp"
+		    android:textColor="#FFFFFF"
+		    android:text="" />
+
+	</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bt_show_banner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="显示条幅" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bt_show_insert"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="显示插屏" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bt_show_full"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="显示全屏" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bt_show_notify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="显示通知" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bt_show_shop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="跳转推荐墙" />
+
+            <Button
+                android:id="@+id/btn_paster_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="切片大比例" 
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/layout_view_big"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_paster_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="切片中比例" 
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/layout_view_middle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_paster_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="切片小比例" 
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/layout_view_small"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

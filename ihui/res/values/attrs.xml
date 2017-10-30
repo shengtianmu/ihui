@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Drawable states.
+         The mapping of Drawable states to a particular drawables is specified
+         in the "state" elements of a Widget's "selector" element.
+         Possible values:
+         <ul>
+         <li>"state_focused"
+         <li>"state_window_focused"
+         <li>"state_enabled"
+         <li>"state_checked"
+         <li>"state_selected"
+         <li>"state_active"
+         <li>"state_single"
+         <li>"state_first"
+         <li>"state_mid"
+         <li>"state_last"
+         <li>"state_only"
+         <li>"state_pressed"
+         <li>"state_error"
+         <li>"state_circle"
+         <li>"state_rect"
+         <li>"state_grow"
+         <li>"state_move"
+         </ul>  -->
+    <declare-styleable name="DrawableStates">
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_focused" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_window_focused" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_enabled" format="boolean" />
+        <!--  State identifier indicating that the object <var>may</var> display a check mark.
+              See {@link R.attr#state_checked} for the identifier that indicates whether it is
+              actually checked. -->
+        <attr name="state_checkable" format="boolean"/>
+        <!--  State identifier indicating that the object is currently checked.  See
+              {@link R.attr#state_checkable} for an additional identifier that can indicate if
+              any object may ever display a check, regardless of whether state_checked is
+              currently set. -->
+        <attr name="state_checked" format="boolean"/>
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_selected" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_active" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_single" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_first" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_middle" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_last" format="boolean" />
+        <!--  State value for {@link android.graphics.drawable.StateListDrawable StateListDrawable}.-->
+        <attr name="state_pressed" format="boolean" />
+    </declare-styleable>
+     <declare-styleable name="SlidingTab">
+        <!-- Use "horizontal" for a row, "vertical" for a column.  The default is horizontal. -->
+        <attr name="orientation" format="string" />
+    </declare-styleable>
+    
+    <!-- com.hzjstudio -->
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+    
+     <declare-styleable name="TimeTextView">
+        
+    </declare-styleable>
+</resources>

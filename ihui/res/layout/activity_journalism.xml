@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:baselineAligned="false"
+	    android:background="#FFFFFF"
+	    android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:id="@+id/back"
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	       <ImageView
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/com_hzjstudio__ihui_left1" />
+
+	        <TextView
+	            android:id="@+id/gameplay_fanhui"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="返回"
+	            android:textColor="#000000"
+	            android:textSize="15sp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center" >
+	
+	        <TextView
+	            
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:text=""
+	            android:textSize="18sp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center" />
+	    </LinearLayout>
+	
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#33000000"/>
+
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	        <ImageView
+	            android:id="@+id/iv_phone"
+	            android:visibility="gone"
+			    android:layout_width="match_parent"
+			    android:layout_height="140dp"
+			    android:scaleType="fitXY"/>
+		
+			<WebView
+			    android:id="@+id/webView"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" />
+			<View
+			    android:layout_marginTop="10dp" 
+			    android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#E2E2E2"/>
+			<TextView
+			    android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#373737"
+                android:textSize="16sp"
+                android:text="@string/xgtj" />
+
+            <TextView
+                android:id="@+id/tv_titles"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5EC4F6"
+                android:textSize="14sp" />
+	    </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

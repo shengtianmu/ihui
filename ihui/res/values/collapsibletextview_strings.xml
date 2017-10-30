@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="collapsibletextview_desc_shrinkup">收起</string>
+    <string name="collapsibletextview_desc_spread">显示更多</string>
+
+</resources>

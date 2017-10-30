@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/tv_xiazaisong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_desc"
+            android:layout_below="@+id/pb_progress"
+            android:text="下载送"
+            android:textColor="#ff5500"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_xiazaisong"
+            android:layout_alignBottom="@+id/tv_xiazaisong"
+            android:layout_toRightOf="@+id/tv_xiazaisong"
+            android:textColor="#ff5500"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_pointsunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_points"
+            android:layout_alignBottom="@+id/tv_points"
+            android:layout_toRightOf="@+id/tv_points"
+            android:text="元"
+            android:textColor="#ff5500"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/com_hzjstudio_ihui_progressbar_item" />
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/pb_progress"
+            android:layout_alignLeft="@+id/pb_progress"
+            android:layout_alignRight="@+id/pb_progress"
+            android:layout_alignTop="@+id/pb_progress"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pb_progress"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="70dp"
+        android:background="#CDCDCD" />
+
+</LinearLayout>

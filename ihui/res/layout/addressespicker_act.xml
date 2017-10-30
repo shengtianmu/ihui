@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/layout_bg">
+	
+	<LinearLayout
+	    android:id="@+id/main"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:visibility="gone">
+		
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_gravity="center_horizontal"
+				android:paddingTop="4dp"
+				android:layout_marginTop="8dp"
+				android:orientation="horizontal"
+				android:layout_weight="1">
+			
+		   <kankan.wheel.widget.WheelView android:id="@+id/province"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"/>
+			
+			<kankan.wheel.widget.WheelView android:id="@+id/city"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_marginLeft="10dp"
+				android:layout_weight="1.5"/>
+				
+			</LinearLayout>
+			
+			<Button
+			    android:id="@+id/btnOK"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="18dp"
+				android:textSize="18sp"
+				android:text="确定"
+				android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+            
+            <ProgressBar
+        		android:id="@+id/progressBar"
+        		style="?android:attr/progressBarStyleLarge"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        
+        		android:layout_gravity="center_horizontal"
+         	/>
+      
+        	<TextView
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="正在获取代理商"
+       			android:layout_marginTop="10dp"
+        		android:textColor="#fff"
+        		android:textSize="20sp"
+        	/>
+    </LinearLayout>
+</LinearLayout>

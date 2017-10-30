@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f2f2f3" >
+
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/fujin"
+            android:textColor="@color/text_num_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/im_fabushangpin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/ic_ihui_ihui" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/balck_gray" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list_yihuo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="#00000000"
+        android:divider="#DDD"
+        android:dividerHeight="1dip" 
+        ptr:ptrHeaderTextColor="@color/pulltorefreshheader_gray" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

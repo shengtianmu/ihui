@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image_im"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:src="@drawable/com_hzjstudio__ihui_occupying1" />
+
+        <TextView
+            android:id="@+id/textview_chanpinxinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品的信息描述"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/balck_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_kucun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:text="距离:"
+                android:textColor="#7b7b7b"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView_jiaqian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentTop="true"
+                android:text="38"
+                android:textColor="#fc5600"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView_jiaqian"
+                android:text="￥"
+                android:textColor="#fc5600"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView_kucunshuliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/textView_kucun"
+                android:text="233件"
+                android:textColor="#7b7b7b"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image_im1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic" />
+
+        <TextView
+            android:id="@+id/textview_chanpinxinxi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品的信息描述"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/balck_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_kucun1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="库存:"
+                android:textColor="#7b7b7b"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView_jiaqian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="38"
+                android:textColor="#7b7b7b"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView_jiaqian1"
+                android:text="￥"
+                android:textColor="#7b7b7b"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView_kucunshuliang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/textView_kucun1"
+                android:text="233件"
+                android:textColor="#7b7b7b"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+
+</LinearLayout>

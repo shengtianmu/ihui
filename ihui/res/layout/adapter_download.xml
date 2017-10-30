@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/round_editback5" />
+	<TextView
+        android:id="@+id/tv_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/pb_progress"
+        android:layout_alignLeft="@+id/pb_progress"
+        android:layout_alignRight="@+id/pb_progress"
+        android:layout_alignTop="@+id/pb_progress"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="16sp" />
+</RelativeLayout>

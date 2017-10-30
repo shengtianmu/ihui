@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SlidingTab -->
+    <color name="sliding_tab_text_color_active">@android:color/black</color>
+    <color name="sliding_tab_text_color_shadow">@android:color/black</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="indicator_color">#ff33b5e5</color>
+    
+    
+    <color name="util_imagepicker_bg_light_blue">#EBF5FF</color>
+    
+    <!-- com.hzjstudio -->
+    <color name="orange">#FF8800</color>
+    <color name="black">#000000</color>
+    <color name="pulltorefreshheader_gray">#616161</color>
+    <color name="text_black">#000000</color>
+    <color name="transparent">#ffffffff</color>
+    <color name="green_blue">#C4E1E1</color>
+    <color name="white_gray">#F0F0F0</color>
+    <color name="balck_gray">#7B7B7B</color>
+    <color name="gray1">#e5e5e5</color>
+    <color name="text_num_gray">#000000</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    <color name="dialog_hong">#ffcfcf</color>
+    <color name="dialog_huang">#ffd68d</color>
+    <color name="dialog_lan">#add9eb</color>
+    <color name="dialog_hong_h">#ec4748</color>
+    <color name="blue">#0000ff</color>
+    
+    <color name="b_gray">#e6e6e6</color>
+    
+    <color name="white">#ffffff</color><!--白色 --> 
+    <color name="hh_orange">#ff5400</color><!--橙色 -->
+    <color name="black1">#333333</color>
+    <color name="orange1">#f35f65</color>
+    
+    <color name="gray">#f6f6f6</color>
+</resources>
+

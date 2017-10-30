@@ -1,0 +1,281 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zpstudio"
+    android:versionCode="576"
+    android:versionName="5.76" 
+    android:hardwareAccelerated="false">
+	<!-- 
+	应用签名:3077dabdb739bfc2a27048e7a7476564
+	 -->
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="19"/>
+        
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>  
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<!--  
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:name=".app.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ihui"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:enabled="true">
+        
+        <meta-data  
+        android:name="com.baidu.lbsapi.API_KEY"  
+        android:value="4ocfgcljgEzeis9ocj2CCe3R" />  
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".ui.prelude.Appstart"
+            android:launchMode="singleTop" 
+            android:screenOrientation="portrait"
+            android:configChanges="locale">
+        </activity>
+        <activity android:name=".ui.util.imagepicker.ActImagePicker"   android:launchMode="singleTop" android:configChanges="locale">
+        <intent-filter>
+                <action android:name="luminous.ACTION_PICK" />
+                <action android:name="luminous.ACTION_MULTIPLE_PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.game.puzzle.PuzzleGamePickerAct"   android:launchMode="singleTop" android:configChanges="locale">
+            <intent-filter>
+                <action android:name="puzzlegame.ACTION_PICK" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.open.crop.act.ActCropImage"   android:launchMode="singleTop" android:configChanges="locale"/>
+        <activity android:name="com.zpstudio.ui.util.imagepicker.ActImagePicker"   android:launchMode="singleTop" android:configChanges="locale"/>
+        <activity android:name=".ui.util.AddressPickerAct"   android:theme="@style/Dialog_Top" android:launchMode="singleTop" android:configChanges="locale"/>
+        <activity android:name=".ui.util.NumberPickerAct"   android:theme="@style/Dialog_Top" android:launchMode="singleTop" android:configChanges="locale"/>
+        <activity android:name=".ui.game.puzzle.PuzzleGameAct"   android:launchMode="singleTop" android:configChanges="locale"/>
+        <activity android:name=".ui.util.ActBrowser"      android:launchMode="standard" android:configChanges="locale"/>
+        <activity android:name=".ui.util.ShareAppAct"      android:launchMode="standard" android:configChanges="locale"/>
+        <activity android:name=".ui.util.ActDialog"       android:launchMode="singleTop" android:configChanges="locale"/>
+        <activity android:name=".ui.adv.LockScreenAdv"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTop"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:configChanges="locale"/>
+        
+        <activity android:name="info.androidhive.imageslider.ActGallery"      
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+                  android:launchMode="standard" android:configChanges="locale"/>
+        
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.ActQRScanner"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <provider android:name=".contentprovider.IhuiProvider"
+          		  android:authorities="com.zpstudio.ihuiProvider"/>
+        
+        <provider android:name=".contentprovider.LocalFileContentProvider"
+          		  android:authorities="com.zpstudio.androidfile"/>   
+        
+        <service android:name=".ui.adv.LockScreenService"
+		         android:enabled ="true"
+		         android:exported="true"
+		         >
+		</service>
+		
+		<service android:name=".ui.adv.DaemonService"
+		         android:enabled ="true"
+		         android:process =":DaemonService">
+		</service>
+        
+		<receiver android:name=".ui.adv.BootUpReceiver"
+		    android:enabled="true">
+            <intent-filter android:priority="0">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity
+		 android:name="cn.sharesdk.framework.ShareSDKUIShell"
+		 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		 android:configChanges="keyboardHidden|orientation|screenSize"
+		 android:screenOrientation="portrait"
+		 android:windowSoftInputMode="stateHidden|adjustResize" >
+			 <intent-filter>
+				 <data android:scheme="tencent100371282" />
+				 <action android:name="android.intent.action.VIEW" />
+				 <category android:name="android.intent.category.BROWSABLE" />
+				 <category android:name="android.intent.category.DEFAULT" />
+			 </intent-filter>
+		</activity>
+		
+        <!--微信分享回调 -->
+		 <activity
+		 android:name=".wxapi.WXEntryActivity"
+		 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		 android:configChanges="keyboardHidden|orientation|screenSize"
+		 android:exported="true"
+		 android:screenOrientation="portrait" /> 
+		   
+		<!--易信分享回调 -->
+		 <activity
+		 android:name=".yxapi.YXEntryActivity"
+		 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		 android:configChanges="keyboardHidden|orientation|screenSize"
+		 android:exported="true"
+		 android:screenOrientation="portrait" />
+		
+		 <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+		 
+		 <!-- com.hzjstudio -->
+		 <activity
+            android:name="com.hzjstudio.ihui.Main"
+            android:label="@string/app_name" 
+            >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.LoginActivity" 
+            android:launchMode="singleTop" 
+            android:screenOrientation="portrait"
+            android:configChanges="locale">
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.ActivityZhuCe" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.ActivityMiMa" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.ActivityTabFragment" 
+            android:launchMode="singleTask" 
+            android:screenOrientation="portrait"
+            android:configChanges="locale">
+			 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.UserZhuCe" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.UserMiMa" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.UserXinXi" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.UserUpdate" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.GuanYu" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.PingBao" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.UserZhuanZhang" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.UserShouRu" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.view.ShouRu" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.view.FuWu" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.view.BarterAct" >
+        </activity>
+        <activity android:name="com.hzjstudio.ihui.view.MainZhuanPan" >
+        </activity>
+        <activity
+            android:name="com.hzjstudio.ihui.utils.SelectPicPopupWindow"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        
+        <activity android:name=".ui.util.SharePopupMenuActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity 
+            android:name=".ui.util.WebMorePopupMenuActivity" 
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.hzjstudio.ihui.view.MainYinDao1"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.hzjstudio.ihui.view.MainYinDao2"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.hzjstudio.ihui.view.MainYinDao3"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.hzjstudio.ihui.GameDownloadActivity">
+        </activity>
+        
+        <activity android:name="com.zpstudio.ui.adv.fragment.AActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"     
+            android:launchMode="standard" />
+        <activity android:name="com.zpstudio.ui.adv.fragment.BActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"     
+            android:launchMode="standard" />
+        <activity android:name="com.zpstudio.ui.adv.fragment.CActivity"  
+            android:theme="@android:style/Theme.NoTitleBar"    
+            android:launchMode="standard" />
+        <activity android:name="com.zpstudio.ui.adv.fragment.JournalismActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"     
+            android:launchMode="standard" />
+        <activity android:name="com.zpstudio.ui.adv.fragment.AdvertisementActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"     
+            android:launchMode="standard" />
+        <activity android:name="com.hzjstudio.ihui.BinDingActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"     
+            android:launchMode="standard" />
+        
+        <activity android:name="com.hzjstudio.ihui.CardMakeMoneyActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"     
+            android:launchMode="standard" />
+        
+        <activity android:name="com.hzjstudio.ihui.RecommendMakeMoneyActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"     
+            android:launchMode="standard" />
+        
+        
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+    </application>
+
+</manifest>

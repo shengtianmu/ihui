@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:baselineAligned="false"
+	    android:background="#FFFFFF"
+	    android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:id="@+id/back"
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	       <ImageView
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:src="@drawable/com_hzjstudio__ihui_left1" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center" >
+	
+	        <TextView
+	            
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:text="@string/cardmakemone"
+	            android:textSize="18sp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center" />
+	    </LinearLayout>
+	
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#33000000"/>
+
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:scrollbars="none"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	       
+	        android:orientation="vertical" >
+	        <LinearLayout
+	            android:id="@+id/ll_gz"
+			    android:gravity="center"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/iv_banner"
+			    android:orientation="vertical" >
+		
+				<TextView
+				    android:visibility="invisible"
+				    android:layout_marginTop="30dp"
+				    android:layout_marginBottom="10dp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="18sp"
+				    android:lines="1"
+				    android:textColor="#333333"
+				    android:text="@string/cardmakemone_1" />
+		
+				<TextView
+				    android:visibility="invisible"
+				    android:layout_marginBottom="30dp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="16sp"
+				    android:lines="1"
+				    android:textColor="#333333"
+				    android:text="@string/cardmakemone_2" />
+		
+			</LinearLayout>
+			<View
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="#33000000"/>
+		
+			<com.zpstudio.ui.adv.view.HeightListView
+			    android:id="@+id/lv_cardmakemoney"
+			    android:scrollbars="none"
+			    android:cacheColorHint="#00000000"
+				android:divider="#E2E2E2" 
+				android:dividerHeight="1dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" >
+			</com.zpstudio.ui.adv.view.HeightListView>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

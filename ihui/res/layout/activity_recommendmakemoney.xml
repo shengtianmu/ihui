@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:baselineAligned="false"
+	    android:background="#FFFFFF"
+	    android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:id="@+id/back"
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	       <ImageView
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:src="@drawable/com_hzjstudio__ihui_left1" />
+	       
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center" >
+	
+	        <TextView
+	            
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:text="推荐赚钱"
+	            android:textSize="18sp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center" />
+	    </LinearLayout>
+	
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#33000000"/>
+
+	<LinearLayout
+	    android:gravity="center"
+	    android:layout_margin="15dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="我的邀请号码:"
+		    android:textSize="15sp"
+		    android:textColor="#444444"
+		    android:layout_marginRight="10dp"/>
+
+		<TextView
+		    android:id="@+id/tv_invitation_code"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="15sp"
+		    android:textColor="#fe605d"
+		    android:text="123456789" />
+
+	</LinearLayout>
+	<LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:orientation="horizontal" >
+		<LinearLayout
+		     android:id="@+id/ll_wx"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+             <ImageView
+                 android:id="@+id/iv_wx"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/iv_wx" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="微信好友"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/ll_pyq"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+             <ImageView
+                 android:id="@+id/iv_pyq"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/iv_pyq" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="朋友圈"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/ll_qqhy"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+             <ImageView
+                 android:id="@+id/iv_qqhy"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/iv_qqhy" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="QQ好友"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:visibility="gone"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/com_hzjstudio__ihui_zhuanqian" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="赚钱"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         
+     </LinearLayout>
+		<LinearLayout
+		    android:layout_marginTop="15dp"
+         android:layout_width="match_parent"
+         android:layout_height="90dp"
+         android:background="@color/transparent"
+         android:orientation="horizontal" >
+		<LinearLayout
+		    android:id="@+id/ll_qqkj"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+             <ImageView
+                 android:id="@+id/iv_qqkj"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/iv_qqkj" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="QQ空间"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/ll_wb"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+             <ImageView
+                 android:id="@+id/iv_wb"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/iv_wb" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="微博"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:visibility="invisible"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/com_hzjstudio__ihui_zhuanqian" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="赚钱"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:visibility="gone"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/com_hzjstudio__ihui_zhuanqian" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:text="赚钱"
+                 android:textColor="#333333"
+                 android:textSize="13sp" />
+         </LinearLayout>
+     </LinearLayout>
+     <View
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="5dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#33000000"/>
+     <TextView
+         	android:layout_margin="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="规则说明:"
+		    android:textSize="15sp"
+		    android:textColor="#444444"
+		    android:layout_marginRight="10dp"/>
+     <TextView
+         	android:layout_marginLeft="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="1、推荐好友注册后填写您的邀请码，您可获得0.5元奖励。"
+		    android:textSize="14sp"
+            android:lineSpacingMultiplier="1.5"
+		    android:textColor="#666666"
+		    android:layout_marginRight="10dp"/>
+      <TextView
+          android:layout_marginTop="5dp"
+         	android:layout_marginLeft="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="2、成功推荐两位就可以免费获得一次一元夺宝的机会，iphone手机、笔记本电脑天天等着您来拿。"
+		    android:textSize="14sp"
+		    android:lineSpacingMultiplier="1.5"
+		    android:textColor="#666666"
+		    android:layout_marginRight="10dp"/>
+</LinearLayout>

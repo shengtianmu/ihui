@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:baselineAligned="false"
+	    android:background="#FFFFFF"
+	    android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:id="@+id/back"
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	       <ImageView
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/com_hzjstudio__ihui_left1" />
+
+	        <TextView
+	            android:id="@+id/gameplay_fanhui"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="返回"
+	            android:textColor="#000000"
+	            android:textSize="15sp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center" >
+	
+	        <TextView
+	            
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:text=""
+	            android:textSize="18sp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="58dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center" />
+	    </LinearLayout>
+	
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#33000000"/>
+    <WebView
+	    android:id="@+id/webView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+
+</LinearLayout>

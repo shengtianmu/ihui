@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/title_reback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="15sp"
+            android:textColor="#3D3D3D"
+            android:onClick="onBack"
+            android:background="@drawable/title_btn_back"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:text="登录"
+            android:maxEms="6"  
+    		android:singleLine="true"  
+    		android:ellipsize="end"  
+            
+           />
+        <ImageButton 
+			android:id="@+id/right_btn"
+			android:layout_width="67dp" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" 
+			android:layout_centerVertical="true"
+			android:layout_marginRight="5dp"
+			android:src="@drawable/title_btn_function"
+			android:background="@null"
+			android:visibility="gone"/>
+</RelativeLayout>
